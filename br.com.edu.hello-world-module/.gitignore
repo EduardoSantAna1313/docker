@@ -1,0 +1,6 @@
+/target/
+*.tar
+/.settings/
+.classpath
+.project
+*.txt
