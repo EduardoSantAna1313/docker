@@ -3,8 +3,6 @@ FROM amazoncorretto:11
 
 RUN mkdir app
 
-ARG JAR_FILE
-
 ADD /target/Main.jar /app/Main.jar
 
 WORKDIR /app
