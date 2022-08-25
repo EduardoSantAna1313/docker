@@ -4,7 +4,9 @@ RUN apt update
 
 RUN apt install -y nginx curl wget
 
-RUN cd /var/www/ && wget -r http://www.google.com -o index.html
+WORKDIR /var/www/ 
+
+RUN wget -r http://www.google.com
 
 COPY google /etc/nginx/sites-enabled/html
 
