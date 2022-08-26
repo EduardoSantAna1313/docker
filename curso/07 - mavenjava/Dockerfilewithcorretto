@@ -1,0 +1,17 @@
+# Using amazon corretto for jdk11
+
+FROM maven:3.8.6-amazoncorretto-11 as builder
+
+COPY hello.world /app
+
+WORKDIR /app
+
+RUN mvn package -DskipTests
+
+FROM amazoncorretto:11
+
+ARG project
+
+COPY --from=builder /app/target/hello.world.jar /app.jar
+
+CMD java -jar /app.jar

@@ -1,0 +1,1 @@
+Hello world app with maven and java 11.
