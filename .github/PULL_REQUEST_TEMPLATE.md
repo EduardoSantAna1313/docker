@@ -1,4 +1,7 @@
 ## Qual feature dessa branch
 Descrição feature...
 
-## Teste
+## Criterios de aceite:
+
+[ ] O código foi formatado
+[ ] O código passou por validação no sonar ?
