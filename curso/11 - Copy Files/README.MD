@@ -1,0 +1,1 @@
+Using the command docker cp to copy files into container.
