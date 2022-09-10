@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  os:
+    image: python:3.9-alpine
+    container_name: python_compose
+    ports:
+      - "80:8000"
+    command: "python -m http.server 8000"
